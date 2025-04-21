@@ -1,0 +1,78 @@
+.cont {
+    display: grid;
+    grid-template-areas: 
+        "head head head"
+        "nav nav nav"
+        "left content right"
+        "new new new"
+        "extra1 extra2 extra3"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+.head {
+    grid-area: head;
+    background-color: chocolate;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+}
+.nav {
+    grid-area: nav;
+    background-color:bisque;
+    text-align: center;
+    padding: 20px;
+}
+.left {
+    grid-area: left;
+    background-color:cadetblue;
+    text-align: center;
+    padding: 20px;
+}
+.content {
+    grid-area: content;
+    background-color:green;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    font-size: medium;
+}
+.right {
+    grid-area: right;
+    background-color:aqua;
+    text-align: center;
+    padding: 20px;
+}
+.new {
+    grid-area: new;
+    background-color:crimson;
+    text-align: center;
+    padding: 20px;
+}
+.extra1 {
+    grid-area: extra1;
+    background-color:darkslategray;
+    text-align: center;
+    padding: 20px;
+}
+.extra2 {
+    grid-area: extra2;
+    background-color:dimgray;
+    text-align: center;
+    padding: 20px;
+}
+.extra3 {
+    grid-area: extra3;
+    background-color:slategrey;
+    text-align: center;
+    padding: 20px;
+}
+.footer {
+    grid-area: footer;
+    background-color:goldenrod;
+    text-align: center;
+    padding: 20px;
+}
